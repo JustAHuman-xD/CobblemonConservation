@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemonconservation",
+  "version": "${version}",
+  "name": "CobblemonConservation",
+  "description": "A simple serverside mod that prevents specific pokemon from despawning",
+  "authors": [
+    "JustAHuman"
+  ],
+  "contact": {
+    "homepage": "https://github.com/JustAHuman-xD/CobblemonConservation"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cobblemonconservation/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.justahuman.cobblemonconservation.fabric.CobblemonconservationFabric"
+    ],
+    "client": [
+      "me.justahuman.cobblemonconservation.fabric.client.CobblemonconservationFabricClient"
+    ]
+  },
+  "mixins": [
+    "cobblemonconservation.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

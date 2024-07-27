@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "cobblemonconservation"
+version = "${version}"
+displayName = "CobblemonConservation"
+authors = "JustAHuman"
+description = '''
+A simple serverside mod that prevents specific pokemon from despawning (or allows a timer despawn)
+'''
+#logoFile = ""
+
+[[dependencies.cobblemonconservation]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cobblemonconservation]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cobblemonconservation]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"
